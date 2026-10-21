@@ -1,0 +1,41 @@
+{
+  "name": "salesforce-mcp",
+  "version": "1.0.0",
+  "description": "Customer Insights MCP Server for Salesforce + ChatGPT",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:sf": "tsx src/test-connection.ts"
+  },
+  "keywords": [
+    "mcp",
+    "salesforce",
+    "chatgpt",
+    "modelcontextprotocol",
+    "customer-insights"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "jsforce": "^3.12.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsforce": "^3.0.0",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
+  }
+}
